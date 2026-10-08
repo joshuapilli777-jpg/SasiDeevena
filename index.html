@@ -647,6 +647,42 @@ h2, .section-heading{
 }
 .timeline-copy{margin:0;color:var(--muted);font:20px/1.5 "Cormorant Garamond", serif}
 
+/* Venue Card */
+.venue-card{
+  max-width:680px;
+  margin:35px auto 0;
+  padding:48px 28px;
+  border-radius:32px;
+  background:var(--glass-bg);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);
+  box-shadow:var(--glass-shadow);
+  position:relative;
+}
+.venue-icon{font-size:30px;margin-bottom:8px}
+.venue-card h3{
+  margin:0 0 14px;
+  font-family:'Cinzel', serif;
+  font-size:clamp(26px, 4vw, 36px);
+  font-weight:600;
+  letter-spacing:1px;
+}
+.address{
+  margin:0 auto 28px;
+  font:22px/1.55 "Cormorant Garamond", serif;
+  color:var(--muted);
+}
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+}
+.btn.primary{background:linear-gradient(135deg,#dfba73,#b88a3b);color:#090e17}
+.btn.secondary{background:var(--navy-surface);color:var(--ink);border:1px solid var(--gold-border)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.4)}
+
 /* RSVP Card & Form */
 .rsvp-card{
   max-width:680px;
@@ -727,42 +763,6 @@ h2, .section-heading{
   transform:translateY(-2px);
   box-shadow:0 14px 28px rgba(223, 186, 115, 0.35);
 }
-
-/* Venue Card */
-.venue-card{
-  max-width:680px;
-  margin:35px auto 0;
-  padding:48px 28px;
-  border-radius:32px;
-  background:var(--glass-bg);
-  backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
-  border:1px solid var(--glass-border);
-  box-shadow:var(--glass-shadow);
-  position:relative;
-}
-.venue-icon{font-size:30px;margin-bottom:8px}
-.venue-card h3{
-  margin:0 0 14px;
-  font-family:'Cinzel', serif;
-  font-size:clamp(26px, 4vw, 36px);
-  font-weight:600;
-  letter-spacing:1px;
-}
-.address{
-  margin:0 auto 28px;
-  font:22px/1.55 "Cormorant Garamond", serif;
-  color:var(--muted);
-}
-.buttons{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:12px;
-}
-.btn.primary{background:linear-gradient(135deg,#dfba73,#b88a3b);color:#090e17}
-.btn.secondary{background:var(--navy-surface);color:var(--ink);border:1px solid var(--gold-border)}
-.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.4)}
 
 /* Floating Quick Bar */
 .quick-dock{
@@ -1090,7 +1090,7 @@ if('IntersectionObserver' in window){
   </div>
   <div class="section-label shimmer-text">With gratitude &amp; joy</div>
 
-  
+  <div class="couple">
     <article class="person tilt-card">
       <div class="filigree top-right" aria-hidden="true" style="width:46px;height:46px">
         <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><path d="M26,38 C18,24 35,16 42,28 Z" fill="rgba(223,186,115,0.4)" stroke="#dfba73" stroke-width="0.8"/></svg>
@@ -1099,7 +1099,7 @@ if('IntersectionObserver' in window){
       <h3>Dr. Sasi Preetham Manukonda</h3>
       <div class="parents">S/o Mr. M.V.V. Satyanarayana<br>&amp; Mrs. Santha Kumari</div>
     </article>
-  <div class="couple">
+
     <article class="person tilt-card">
       <div class="filigree top-left" aria-hidden="true" style="width:46px;height:46px">
         <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><path d="M26,38 C18,24 35,16 42,28 Z" fill="rgba(223,186,115,0.4)" stroke="#dfba73" stroke-width="0.8"/></svg>
@@ -1212,7 +1212,37 @@ if('IntersectionObserver' in window){
   </div>
 </section>
 
-<!-- RSVP Section -->
+<!-- Venue Section -->
+<section class="section reveal">
+  <div class="bokeh-layer" aria-hidden="true">
+    <div class="bokeh-orb orb-4"></div>
+  </div>
+  <div class="section-inner">
+    <div class="section-label shimmer-text">The celebration</div>
+    <h2>Meet Us at the Garden</h2>
+    <div class="ornament divider">
+      <span class="line"></span><span class="star">✦</span><span class="line"></span>
+    </div>
+
+    <div class="venue-card tilt-card">
+      <div class="filigree top-left" aria-hidden="true" style="width:50px;height:50px">
+        <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><circle cx="14" cy="86" r="3" fill="#dfba73"/></svg>
+      </div>
+      <div class="filigree top-right" aria-hidden="true" style="width:50px;height:50px">
+        <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><circle cx="14" cy="86" r="3" fill="#dfba73"/></svg>
+      </div>
+      <div class="venue-icon shimmer-text" aria-hidden="true">⌖</div>
+      <h3>Adabala Gardens</h3>
+      <p class="address">Saibaba Temple Road<br>Palakollu, Andhra Pradesh 534260</p>
+      <div class="buttons">
+        <a class="btn primary" target="_blank" rel="noopener" href="https://maps.app.goo.gl/LtFcmX7WESMcbg2h9">View Directions</a>
+        <a class="btn secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deevena%20%26%20Sasi%20Preetham%20Wedding&dates=20261123T100000/20261123T130000&details=Wedding%20Ceremony%20of%20Deevena%20%26%20Sasi%20Preetham&location=Adabala%20Gardens%2C%20Palakollu%2C%20Andhra%20Pradesh" target="_blank" rel="noopener">Google Calendar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP Section (Moved after Venue / Address) -->
 <section class="section alt reveal" id="rsvp-section">
   <div class="section-inner">
     <div class="section-label shimmer-text">Will You Join Us?</div>
@@ -1266,36 +1296,6 @@ if('IntersectionObserver' in window){
 
         <button type="submit" class="rsvp-submit">Confirm via WhatsApp</button>
       </form>
-    </div>
-  </div>
-</section>
-
-<!-- Venue Section -->
-<section class="section reveal">
-  <div class="bokeh-layer" aria-hidden="true">
-    <div class="bokeh-orb orb-4"></div>
-  </div>
-  <div class="section-inner">
-    <div class="section-label shimmer-text">The celebration</div>
-    <h2>Meet Us at the Garden</h2>
-    <div class="ornament divider">
-      <span class="line"></span><span class="star">✦</span><span class="line"></span>
-    </div>
-
-    <div class="venue-card tilt-card">
-      <div class="filigree top-left" aria-hidden="true" style="width:50px;height:50px">
-        <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><circle cx="14" cy="86" r="3" fill="#dfba73"/></svg>
-      </div>
-      <div class="filigree top-right" aria-hidden="true" style="width:50px;height:50px">
-        <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><circle cx="14" cy="86" r="3" fill="#dfba73"/></svg>
-      </div>
-      <div class="venue-icon shimmer-text" aria-hidden="true">⌖</div>
-      <h3>Adabala Gardens</h3>
-      <p class="address">Saibaba Temple Road<br>Palakollu, Andhra Pradesh 534260</p>
-      <div class="buttons">
-        <a class="btn primary" target="_blank" rel="noopener" href="https://maps.app.goo.gl/LtFcmX7WESMcbg2h9">View Directions</a>
-        <a class="btn secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deevena%20%26%20Sasi%20Preetham%20Wedding&dates=20261123T100000/20261123T130000&details=Wedding%20Ceremony%20of%20Deevena%20%26%20Sasi%20Preetham&location=Adabala%20Gardens%2C%20Palakollu%2C%20Andhra%20Pradesh" target="_blank" rel="noopener">Google Calendar</a>
-      </div>
     </div>
   </div>
 </section>
