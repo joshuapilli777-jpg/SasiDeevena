@@ -1082,7 +1082,7 @@ if('IntersectionObserver' in window){
   </div>
 </section>
 
-<!-- With Gratitude & Joy Section -->
+  <!-- With Gratitude & Joy Section -->
 <section class="section reveal">
   <div class="bokeh-layer" aria-hidden="true">
     <div class="bokeh-orb orb-1"></div>
@@ -1109,7 +1109,7 @@ if('IntersectionObserver' in window){
 
     <article class="person tilt-card">
       <div class="filigree top-left" aria-hidden="true" style="width:46px;height:46px">
-        <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><path d="M26,38 C18,24 35,16 42,28 Z" fill="rgba(223,186,115,0.4)" stroke="#dfba73" stroke-width="0.8"/></svg>
+        <svg viewBox="0 0 100 100"><path d="M14,86 Q14,14 86,14" stroke="#dfba73" stroke-width="1.4" fill="none"/><circle cx="14" cy="86" r="3" fill="#dfba73"/></svg>
       </div>
       <div class="role shimmer-text">The Bride</div>
       <h3><span class="title-prefix">Dr. </span>Deevena Salivendra</h3>
@@ -1246,7 +1246,6 @@ if('IntersectionObserver' in window){
 <!-- RSVP Section (Directly after Venue / Address) -->
 <section class="section alt reveal" id="rsvp-section">
   <div class="section-inner">
-    <div class="section-label shimmer-text">Will You Join Us?</div>
     <h2>R.S.V.P</h2>
     <div class="ornament divider">
       <span class="line"></span><span class="star">✦</span><span class="line"></span>
@@ -1273,7 +1272,7 @@ if('IntersectionObserver' in window){
         </div>
 
         <div class="form-group">
-          <label for="attendance">Will You Attend?</label>
+          <label for="attendance">Acknowledgement</label>
           <select id="attendance" name="attendance" required>
             <option value="Joyfully Attending">Joyfully Attending</option>
             <option value="Regretfully Declining">Regretfully Declining</option>
@@ -1306,7 +1305,7 @@ if('IntersectionObserver' in window){
   <div class="closing-monogram sd-font">S &amp; D</div>
   <div class="eyebrow shimmer-text">With love, faith &amp; gratitude</div>
   <h2>See You There</h2>
-  <p>We would be honoured to have you with us as we begin this beautiful new chapter together.</p>
+  <p>We look forward to celebrating this beautiful beginning with you.</p>
 </section>
 
 <footer>S &amp; D · 23 NOVEMBER 2026</footer>
@@ -1650,7 +1649,7 @@ if('IntersectionObserver' in window){
       let message = `*Wedding RSVP — Deevena %26 Sasi Preetham*\n\n` +
                     `*Name:* ${encodeURIComponent(name)}\n` +
                     `*Phone:* ${encodeURIComponent(phone)}\n` +
-                    `*Attendance:* ${encodeURIComponent(attendance)}\n` +
+                    `*Acknowledgement:* ${encodeURIComponent(attendance)}\n` +
                     `*Guests:* ${encodeURIComponent(count)}\n`;
 
       if(notes){
